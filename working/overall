@@ -1,0 +1,7 @@
+How the system/platform works -
+  The system aims to use the most basic method of measuring the resistance of a sample body - that is measuring the voltage drop when a known current is passed through it.
+
+The current driver is a MOSFET-based driver which is controlled using a current-sensing op-amp.
+Stepping the voltage up and down is done using readily available Buck/Boost converter modules for simplification of design and adjustability.
+There are two different ground-references given in the system, one is WRT the battery and is used for most of the power driving circuity and the other is an electrically isolated ground for the split rails of the Op-Amp
+For amplification of the sensed voltage, 
