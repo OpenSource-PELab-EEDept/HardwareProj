@@ -1,10 +1,1 @@
-How the system/platform works -
-  The system aims to use the most basic method of measuring the resistance of a sample body - that is measuring the voltage drop when a known current is passed through it.
 
-The current driver is a MOSFET-based driver which is controlled using a current-sensing op-amp.
-Stepping the voltage up and down is done using readily available Buck/Boost converter modules for simplification of design and adjustability.
-There are two different ground-references given in the system, one is WRT the battery and is used for most of the power driving circuity and the other is an electrically isolated ground for the split rails of the Op-Amp
-For amplification of the sensed voltage, the INA128P has been used as an istrumentation amplifier, due to its ready availability and high performance
-An ICS712-based current measurement module has been used for the measurement of current, the module has been rated for 5A
-The arduino nano has been used to coordinate and control all of these systems to maximise ease of programming and due  to its compact form factor
-an i2c OLED display is used to display the voltage and current values 
